@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIGURES</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="app">
+		<div class="m-4">
+			<div class="accordion" id="dances">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#slowWaltz" aria-expanded="false" aria-controls="slowWaltz">
+							Медленный вальс
+						</button>
+					</h2>
+					<div id="slowWaltz" class="accordion-collapse collapse" data-bs-parent="#dances">
+						<div class="accordion-body"></div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#tango" aria-expanded="false" aria-controls="tango">
+							Танго
+						</button>
+					</h2>
+					<div id="tango" class="accordion-collapse collapse" data-bs-parent="#dances">
+						<div class="accordion-body"></div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#vienneseWaltz" aria-expanded="false" aria-controls="vienneseWaltz">
+							Венский вальс
+						</button>
+					</h2>
+					<div id="vienneseWaltz" class="accordion-collapse collapse" data-bs-parent="#dances">
+						<div class="accordion-body"></div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#slowFoxstrot" aria-expanded="false" aria-controls="slowFoxstrot">
+							Медленный фокстрот
+						</button>
+					</h2>
+					<div id="slowFoxstrot" class="accordion-collapse collapse" data-bs-parent="#dances">
+						<div class="accordion-body">
+							<list-of-figures class="text-center" :figures="slowFoxtrotFigures"></list-of-figures>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#quickstep" aria-expanded="false" aria-controls="quickstep">
+							Квикстеп
+						</button>
+					</h2>
+					<div id="quickstep" class="accordion-collapse collapse" data-bs-parent="#dances">
+						<div class="accordion-body"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
